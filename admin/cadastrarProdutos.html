@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre seu produto</title>
+    <meta name="description" content="Faça seu pedido!">
+    <meta name="viewport" content="width=device-width, initial-scale=5">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+    
+    <!--Menu-->
+    <nav class="menu">
+        <a href="../index.php"><img width="100px" src="../imagens/logo.jpeg" alt="Full Stack eletro"></a>
+        <a href="../cadastrarProdutos.html">Cadastre Produtos!</a>
+    </nav>
+
+    <!--Inicio do formulário para cadastro de produtos-->
+    <main>
+   <div class="container">
+    <form method="POST" id="formPedidos" action='../php/cadastrarprodutos.php'>
+        <h5>Selecione a categoria do produto</h5>
+        <select class= "form-control" id="categoria" name="categoria" required>
+            <option></option>
+            <option>Geladeira</option>
+            <option>Fogão</option>
+            <option>Micro-ondas</option>
+            <option>Lavadora de roupas</option>
+            <option>Lava-louças</option>
+        </select>
+
+        <h5>Descrição</h5>
+        <input id="descricao" name="descricao" type="text" class="form-control" required>
+
+        <h5>Preço</h5>
+        <input id="preco" name="preco" type="number" class="form-control" step="any" required>
+
+        <h5>Preço com desconto</h5>
+        <input id="preco_com_desconto" name="preco_com_desconto" type="number" class="form-control" step="any" required>
+
+        <h5>Imagem</h5>
+        <input id="imagem" name="imagem" type="file" class="form-control" required>
+
+        <button type="submit" class="btn btn-danger">Cadastrar Produto</button>
+
+    </form>
+
+   </div>
+</body>
+</html>

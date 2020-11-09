@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    padding: 20px;
+}
+
+title{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    width: 25%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    background-color: red;
+    display: flex;
+    height: 50px;
+}
+.menu img{
+    height: 50px;
+}
+
+#Formas_de_Pagamento{
+    color: red;
+}
+
+#rodape{
+    text-align: center;
+}
+footer img{
+    width: 20%;
+}
+
+.main_produtos{
+    display: flex;
+}
+.categorias{
+    width: 20%;
+}
+.categorias ul li{
+   padding: 5px;
+   list-style: none;
+}
+.categorias ul li:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    font-weight: bolder;
+}
+
+.produtos{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.card{
+    margin: 5px;
+    height: 280px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.card hr{
+    width: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card img{
+    margin: 10px;
+    height: 100px;
+}
+.card p:nth-of-type(1){
+    font-size: 0.75rem;
+}
+.categorias h3, .categorias ul {
+    padding: 20px;
+}
+.card p:nth-of-type(2){
+    text-decoration: line-through;
+    font-size: 0.8rem;
+}
+.card p:nth-of-type(3){
+    color: red;
+}
+.endereco{
+    display: flex;
+    justify-content: space-around;
+}
+.endereco div{
+    padding: 20px;
+}
+.contatos{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+}
+form button{
+    width: 100px;
+}
+form *{
+    margin: 10px;
+}
