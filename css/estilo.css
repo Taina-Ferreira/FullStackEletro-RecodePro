@@ -53,9 +53,6 @@ footer img{
 .main_produtos{
     display: flex;
 }
-.categorias{
-    width: 20%;
-}
 .categorias ul li{
    padding: 5px;
    list-style: none;
